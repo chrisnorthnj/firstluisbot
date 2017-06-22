@@ -38,7 +38,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
     session.send('I hear you but I can not understand.  You said: \'%s\'.', session.message.text);
  })
 .matches('greeting', (session, args) => {
-    session.send('Hi, it is good to talk to you.  You said: \'%s\'.', session.message.text);
+    session.send('Hi, it is really good to talk to you.  You said: \'%s\'.', session.message.text);
 })
 .matches('weather', (session, args) => {
     session.send('The weather? Go look outside.  You asked for: ' + JSON.stringify(args));
